@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>MedInfo | Home</title>
+
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+
+	<link rel="stylesheet" type="text/css" href="home.css">
+
+	<link rel="stylesheet" type="text/css" href="global.css">
+
+</head>
+<body>
+	<div id="home">
+	<header>
+		
+		<img id="logo" src="logo.png">
+
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="search.html">Search</a>
+			<a href="about.html">About</a>
+			<a href="featuresandbenefits.html">Features and Benefits</a>
+			<a href="services.html">Services</a>
+			<a href="contact.html">Contact Us</a>
+		</nav>
+
+	</header>
+	</div>
+	<section id="slideshow">
+
+		<section id="content">
+			
+			<h1>MedInfo</h1>
+
+			<h3>Medicine Information</h3>
+
+			<p>-It provides you the information about the drug/medicine you entered by the name.</p>
+			<p>-It can also provides you the suitable medicines for the disease you entered.</p>
+			<a href="about.html"><button>Learn more</button></a>
+		</section>
+
+		<img id="slide" src="background.jpg">
+
+	</section>
+	<section id="Vit">
+		<h1 align="center">Vitamins Tracer</h1>
+		<h3>About Vitamins</h3>
+		<p>The 13 vitamins your body needs are vitamin A, C, D, E, K, B1 (Thiamine), B2 (Riboflavin), B3 (Niacin), B5 (Pantothenic Acid), B6 (Pyridoxine), B7 (Biotin), B9 (Folate) and B12 (Cobalamin).
+			Vitamins are essential micronutrients that are needed for normal cell function, growth, and development. Deficiencies can occur over the course of weeks to months, therefore it’s important to consume them regularly through a healthy diet, and supplements if needed. 
+			Each vitamin has unique functions in the body and can be found in a variety of different foods.</p>
+		<p><i>Our additional feature is giving the knowledge of sources of vitamins in various items.</i></p>
+		</section>
+		<section id="VM">
+		<form id="myform">
+			<label for="vitamins">Choose the Suitable Vitamin:</label>
+			<select id="vitamins" onchange="handleSelection(this.value)">
+			  <option value="vitamin-A">Vitamin-A</option>
+			  <option value="vitamin-C">Vitamin-C</option>
+			  <option value="vitamin-K">Vitamin-D</option>
+			  <option value="vitamin-E">Vitamin-E</option>
+			  <option value="vitamin-K">Vitamin-K</option>
+			  <option value="vitamin-B1">Vitamin-B1</option>
+			  <option value="vitamin-B2">Vitamin-B2</option>
+			  <option value="vitamin-B3">Vitamin-B3</option>
+			  <option value="vitamin-B5">Vitamin-B5</option>
+			  <option value="vitamin-B6">Vitamin-B6</option>
+			  <option value="vitamin-B7">Vitamin-B7</option>
+			  <option value="vitamin-B9">Vitamin-B9</option>
+			  <option value="vitamin-B12">Vitamin-B12</option>
+			</select>
+			<br><br>
+		  </form>
+		  <div id="output"></div>
+		  <script>
+function handleSelection() {
+  var selectedOption = document.getElementById("vitamins").value;
+  var outputElement = document.getElementById("output");
+  switch (selectedOption) {
+    case "vitamin-A":
+      outputElement.textContent = "Vitamin A is a fat-soluble vitamin that helps maintain the health of the skin, corneas, lining of the lungs, intestines, and urinary tract. It also plays an important role in night vision and helps protect against infection. Excellent sources of vitamin A include sweet potato, squash, cooked kale, turnip greens, collards, and carrots, as well as liver, salmon, and mackerel.";
+      break;
+    case "vitamin-C":
+      outputElement.textContent = "Vitamin C is a water-soluble vitamin essential for the growth and repair of bone, skin, and connective tissue, the healing of wounds and burns, and for the normal function of blood vessels. It also acts as an antioxidant, protecting cells from free radicals, and can help the body absorb iron. Common sources of vitamin C include citrus fruits, kiwis, berries, broccoli, and peppers.";
+      break;
+    case "vitamin-D":
+      outputElement.textContent = "Vitamin D is a fat-soluble vitamin that aids the absorption of calcium and phosphorus in the intestine and is essential for bone formation, growth, and repair. It also supports the immune system and may reduce your risk of autoimmune disorders. Vitamin D is found in salmon, herring, sardines, canned tuna, as well as fortified milk and yogurt (dairy and non-dairy.)";
+      break;
+	  case "vitamin-E":
+      outputElement.textContent = "Vitamin E is a fat-soluble vitamin that acts as an antioxidant, protecting cells from being damaged by free radicals. Top sources include vegetable oil, nuts, seeds, green leafy vegetables, and wheat germ.";
+      break;
+	  case "vitamin-K":
+      outputElement.textContent = "Vitamin K is a fat-soluble vitamin that is necessary for blood clotting, as well as healthy bones and other tissues in the body. Vitamin K can be found in dark leafy greens like kale, collard greens, and spinach, as well as broccoli.";
+      break;
+	  case "vitamin-B1":
+      outputElement.textContent = "Thiamin (Vitamin B1) is needed for the metabolism of carbohydrates, proteins, and fats, as well as for normal nerve and heart function. Good sources of thiamine include whole grains, nutritional yeast, meat (especially pork and liver), enriched cereals, nuts, legumes, and potatoes";
+      break;
+	  case "vitamin-B2":
+      outputElement.textContent = "Riboflavin (Vitamin B2) is required for the metabolism of carbohydrates and proteins, and for maintaining healthy mucous membranes like those in the nose and mouth. It can be found in meat and dairy (meat, liver, fish, milk, cheese,) as well as eggs and enriched cereals. ";
+      break;
+	  case "vitamin-B3":
+      outputElement.textContent = "Niacin (Vitamin B3) is needed for the metabolism of dietary carbohydrates and fats, the synthesis of cholesterol and fats in the body, as well as creating and repairing DNA. Niacin can be obtained from red meat, poultry, fish, liver, legumes, whole grains, and enriched cereal and bread.";
+      break;
+	  case "vitamin-B5":
+      outputElement.textContent = "Pantothenic acid (Vitamin B5) plays an essential role in the metabolism of carbohydrates and fats. Good sources of B5 include beef, egg yolks, yeast, potatoes, broccoli, and whole grains.";
+      break;
+	  case "vitamin-B6":
+      outputElement.textContent = "Vitamin B6 (Pyridoxine), is needed in the metabolism of amino acids (protein building blocks), carbohydrates, and fats, as well as for the formation of red blood cells, normal nerve function, and healthy skin. Vitamin B6 can be found in organ meats (including liver), dried yeast, whole-grain cereals, fish, and legumes.";
+      break;
+	  case "vitamin-B7":
+      outputElement.textContent = "Biotin (Vitamin B7) is important for the metabolism of carbohydrates and fatty acids. Good sources include meats, liver, eggs, milk, fish, dried yeast, sweet potatoes, seeds, and nuts.";
+      break;
+	  case "vitamin-B9":
+      outputElement.textContent = "Folate (Vitamin B9) plays an essential role in DNA and RNA synthesis as well as in the development of the fetal nervous system. It’s found in raw green leafy vegetables, asparagus, broccoli, citrus fruits, liver and other organ meats, enriched bread, pasta, and breakfast cereal. Folate is very sensitive to destruction by heat, UV light, and oxidation. Extensive cooking can destroy 50–95% of the folate in food.";
+      break;
+	  case "vitamin-B12":
+      outputElement.textContent = "Vitamin B12 (Cobalamin) is needed for the formation and maturation of red blood cells, DNA synthesis, as well as normal nerve function. The best sources include meats (especially beef, pork, liver, and other organ meats), eggs, milk, clams, oysters, salmon, and tuna. Good vegan sources of B12 include fortified nutritional yeast, cereals, plant-based milk, and meat alternatives.";
+      break;
+    default:
+      outputElement.textContent = "Invalid option";
+      break;
+  }
+var menu = document.getElementById("menu");
+menu.addEventListener("change", handleSelection);
+}
+</script>
+	</section>
+	<div class="iconbutton">
+		<a href="#home">
+			<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+				<path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+			  </svg>
+		</a>
+	  </div>
+	<footer>
+		<img id="logo" src="logo.png">
+		<p id="footer"><h3 align="center">MedInfo</h3></p>
+
+	</footer>
+</body>
+</html>
+
